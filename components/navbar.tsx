@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { navLinks, socialLinks } from "@/lib/data";
 import { NavLink, SocialLink } from "@/types/types";
 import { motion } from "framer-motion";

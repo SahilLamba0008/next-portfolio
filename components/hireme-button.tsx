@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import AnimatedBorder from './ui/animated-border'
-import { Mail, MailCheck } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import Link from 'next/link';
 
 const HireMeButton = () => {

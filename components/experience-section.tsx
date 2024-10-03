@@ -1,8 +1,8 @@
-import { experienceData } from '@/lib/data';
-import { calculateTimeWorked } from '@/lib/utils';
-import { Experience } from '@/types/types';
-import Image from 'next/image';
-import React from 'react';
+import { experienceData } from "@/lib/data";
+import { calculateTimeWorked } from "@/lib/utils";
+import { Experience } from "@/types/types";
+import Image from "next/image";
+import React from "react";
 
 const formatTimeWorked = (startDate: Date, endDate: Date | string) => {
     const monthsWorked = calculateTimeWorked(startDate, endDate);
@@ -14,25 +14,25 @@ const formatTimeWorked = (startDate: Date, endDate: Date | string) => {
         time: isYear ? years : months,
         unit: isYear
             ? years === 1
-                ? 'Year'
-                : 'Years'
+                ? "Year"
+                : "Years"
             : months === 1
-            ? 'Month'
-            : 'Months',
+              ? "Month"
+              : "Months",
     };
 };
 export function formatDate(date: Date): string {
-  const options: Intl.DateTimeFormatOptions = {
-    day: 'numeric',
-    month: 'long', // Use 'short' for abbreviated month names
-    year: 'numeric',
-  };
-  return new Intl.DateTimeFormat('en-US', options).format(date);
+    const options: Intl.DateTimeFormatOptions = {
+        day: "numeric",
+        month: "long", // Use 'short' for abbreviated month names
+        year: "numeric",
+    };
+    return new Intl.DateTimeFormat("en-US", options).format(date);
 }
 
 const ExperienceSection = () => {
     return (
-        <div className='mt-20'>
+        <div className="mt-20">
             <h1 className="text-4xl font-bold mb-8">Experience</h1>
             <div className="flex justify-between gap-4">
                 {experienceData.map(
@@ -50,9 +50,9 @@ const ExperienceSection = () => {
                             startDate,
                             endDate
                         );
-                        const startDateFormatted = formatDate(
-                            new Date(startDate)
-                        );
+                        // const startDateFormatted = formatDate(
+                        //     new Date(startDate)
+                        // );
 
                         return (
                             <div key={idx}>

@@ -337,20 +337,26 @@ export const skills: Skill[] = [
 export const experienceData: Experience[] = [
     {
         companyName: "Global Logic",
-        companyLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy-_VBuH1pCTI_Or2pnRPTiG_EcDherdGtvQ&s",
-        positions: ["Trainee Software Engineer", "Associate Software Engineer", "Software Engineer"],
+        companyLogo:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy-_VBuH1pCTI_Or2pnRPTiG_EcDherdGtvQ&s",
+        positions: [
+            "Trainee Software Engineer",
+            "Associate Software Engineer",
+            "Software Engineer",
+        ],
         startDate: new Date(2024, 2, 4),
         endDate: "current",
         contributions: ["", "", ""],
-        skills: [".Net","React","TypeScript","MsSql"],
+        skills: [".Net", "React", "TypeScript", "MsSql"],
     },
     {
-      companyName: "MPS Infotech",
-      companyLogo: "https://media.licdn.com/dms/image/v2/C4D0BAQFBateOXwNs_g/company-logo_200_200/company-logo_200_200/0/1630556906732/mps_infotech_logo?e=1735776000&v=beta&t=2jj4zH9IBeFQOaKeexFWjNxesXMMlmhVaTbVkvqqxbs",
-      positions: ["Full Stack Developer"],
-      startDate: new Date(2024, 1, 1),
-      endDate: new Date(2024, 2, 20),
-      contributions: ["","",""],
-      skills: ["Cypress", "NextJs", "TypeScript", "MongoDB"]
-    }
+        companyName: "MPS Infotech",
+        companyLogo:
+            "https://media.licdn.com/dms/image/v2/C4D0BAQFBateOXwNs_g/company-logo_200_200/company-logo_200_200/0/1630556906732/mps_infotech_logo?e=1735776000&v=beta&t=2jj4zH9IBeFQOaKeexFWjNxesXMMlmhVaTbVkvqqxbs",
+        positions: ["Full Stack Developer"],
+        startDate: new Date(2024, 1, 1),
+        endDate: new Date(2024, 2, 20),
+        contributions: ["", "", ""],
+        skills: ["Cypress", "NextJs", "TypeScript", "MongoDB"],
+    },
 ] as const;

@@ -33,7 +33,7 @@ const HeroSection = () => {
           </div>
           <div>
               <h1 className="font-bold text-4xl">
-                  Hey, I'm{" "}
+                  Hey, I&apos;m{" "}
                   <span className="text-indigo-500 stroke-slate-100">
                       Sahil
                   </span>{" "}
@@ -43,7 +43,7 @@ const HeroSection = () => {
                   A Passionate{" "}
                   <span className="text-white">full stack developer</span> with
                   almost a year of work experience. I love contribute in open
-                  source projects just as a hobby. Currently I'm working on{" "}
+                  source projects just as a hobby. Currently I&apos;m working on{" "}
                   <span className="text-white">portfolio maker</span> project
                   which will provide you your custom portfolio based on the
                   template we have and at the end you can have your own deployed

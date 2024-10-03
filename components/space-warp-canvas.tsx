@@ -447,7 +447,7 @@ const SpaceWarpCanvas = () => {
   useEffect(() => {
     const isSpaceWarped = document.getElementById("effect")
     AnimateSpaceWarp()
-  }, [])
+  }, [AnimateSpaceWarp])
 
   return (
     <div className="fixed top-0 z-[-1] h-screen" id="holder">

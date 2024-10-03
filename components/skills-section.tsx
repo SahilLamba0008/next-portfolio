@@ -1,9 +1,9 @@
 import { skills } from '@/lib/data'
 import { Skill } from '@/types/types'
 import React from 'react'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip'
-import { TooltipArrow } from '@radix-ui/react-tooltip'
-import Image from 'next/image'
+// import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip'
+// import { TooltipArrow } from '@radix-ui/react-tooltip'
+// import Image from 'next/image'
 
 const SkillsSection = () => {
   return (
