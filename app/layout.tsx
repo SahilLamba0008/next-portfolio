@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/site";
 import BgGlow from "@/components/ui/bg-glow";
 import Navbar from "@/components/navbar";
 import ActiveSectionContextProvider from "@/context/active-section-context-provider";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -39,6 +40,7 @@ export default function RootLayout({
                     <ActiveSectionContextProvider>
                         <Navbar />
                         <SpaceWarpCanvas />
+                        <SpeedInsights />
                         {children}
                     </ActiveSectionContextProvider>
                 </ThemeProvider>
