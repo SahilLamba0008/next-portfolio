@@ -35,7 +35,7 @@ export type Project = {
     keyPoints: string[];
     skillsSvg: string[];
     even: boolean;
-}
+};
 
 export type Experience = {
     companyName: string;
@@ -45,4 +45,11 @@ export type Experience = {
     endDate: Date | string;
     contributions: string[];
     skills: string[];
-}
+};
+
+export type Contributions = {
+    prTitle: string;
+    repoLink: string;
+    link: string;
+    prDescription: string;
+};

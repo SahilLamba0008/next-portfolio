@@ -1,22 +1,22 @@
-import { Experience, NavLink, Project, Skill, SocialLink } from "@/types/types";
+import { Icons } from "@/components/ui/icons";
+import { Contributions, Experience, NavLink, Project, Skill, SocialLink } from "@/types/types";
 
 export const socialLinks: SocialLink[] = [
     {
         name: "Linkedin",
         link: "https://www.linkedin.com/in/sahillamba0008/",
+        icon: Icons.linkedin,
     },
     {
         name: "Twitter",
         link: "https://x.com/SahilLamba003",
+        icon: (Icons.twitter),
     },
     {
         name: "GitHub",
         link: "https://github.com/SahilLamba0008",
-    },
-    {
-        name: "LeetCode",
-        link: "https://leetcode.com/u/soulnotfound/",
-    },
+        icon: Icons.github,
+    }
 ] as const; // make it readonly
 
 export const navLinks: NavLink[] = [
@@ -358,5 +358,14 @@ export const experienceData: Experience[] = [
         endDate: new Date(2024, 2, 20),
         contributions: ["", "", ""],
         skills: ["Cypress", "NextJs", "TypeScript", "MongoDB"],
+    },
+] as const;
+
+export const contributions: Contributions[] = [
+    {
+        prTitle: "Add support for theme 36 #46",
+        repoLink: "https://github.com/metz-sh/simulacrum",
+        prDescription: "Fix color scheme for improved visibility (#36): Added a new file theme-light.json for the light theme and defined it in Monaco editor as lightTheme. Created state management for theme changes and stored the selected theme in local storage. Added a dropdown to toggle between themes.",
+        link: "https://github.com/metz-sh/simulacrum/pull/46"
     },
 ] as const;
