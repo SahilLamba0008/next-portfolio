@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React, { Suspense } from 'react'
 import HireMeButton from './hireme-button';
-import Loading from '../app/loading';
 
 const HeroSection = () => {
   return (

@@ -13,6 +13,9 @@ const Navbar = () => {
     const handleSocialLinkClick = (url: string) => {
         setTimeout(() => {
             window.open(url, "_blank");
+            const route = window.location.pathname;
+            console.log(route.substring(1))
+            setActiveSection((route === "/") ? "home" : route.substring(1));    // updating active state after animation is complete
         }, 400); // 0.4s intended delay
     };
 
