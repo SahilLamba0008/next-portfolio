@@ -1,3 +1,4 @@
+import PullReqestComp from '@/components/pull-request-comp';
 import { contributions } from '@/lib/data';
 import { Contributions } from '@/types/types';
 import React from 'react'
@@ -10,17 +11,10 @@ const page = () => {
                 Contributions
             </span>
           </h1>
-          <div>
+          <div className='flex flex-col gap-6'>
             {contributions.map((pr: Contributions, index: number)=>{
               return (
-                <div className='flex' key={index}>
-                  <div>pr icon</div>
-                  <div>
-                    <h1>{pr.prTitle}</h1>
-                    <p>{pr.prDescription}</p>
-                    <p>Repo Link</p>
-                  </div>
-                </div>
+                <PullReqestComp data={pr} key={index}/>
               )
             })}
           </div>

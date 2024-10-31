@@ -17,7 +17,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="fixed top-8 -translate-x-1/2 left-1/2 border border-slate-600/80 rounded-full bg-gray-600/10 backdrop-blur-2xl flex justify-between px-2 py-2 font-bold z-10">
+        <div className="fixed top-8 -translate-x-1/2 left-1/2 border border-slate-600/80 rounded-xl bg-gray-600/10 backdrop-blur-2xl flex justify-between px-2 py-2 font-bold z-10">
             <ul className="flex gap-4 items-center mr-20">
                 {navLinks.map((link: NavLink) => {
                     return (
@@ -35,7 +35,7 @@ const Navbar = () => {
                                 {link.name}
                                 {link.name === activeSection && (
                                     <motion.span
-                                        className="absolute inset-0 rounded-full -z-10 bg-slate-700/25 h-full"
+                                        className="absolute inset-0 rounded-xl -z-10 bg-slate-700/25 h-full"
                                         layoutId="activeSection"
                                         transition={{
                                             type: "spring",
@@ -77,7 +77,7 @@ const Navbar = () => {
                             />
                             {link.name === activeSection && (
                                 <motion.span
-                                    className="absolute inset-0 rounded-full -z-10 bg-slate-700/25 h-full"
+                                    className="absolute inset-0 rounded-xl -z-10 bg-slate-700/25 h-full"
                                     layoutId="activeSection"
                                     transition={{
                                         type: "spring",

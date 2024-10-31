@@ -365,7 +365,13 @@ export const contributions: Contributions[] = [
     {
         prTitle: "Add support for theme 36 #46",
         repoLink: "https://github.com/metz-sh/simulacrum",
-        prDescription: "Fix color scheme for improved visibility (#36): Added a new file theme-light.json for the light theme and defined it in Monaco editor as lightTheme. Created state management for theme changes and stored the selected theme in local storage. Added a dropdown to toggle between themes.",
+        prDescription: "Added a new file theme-light.json for the light theme and defined it in Monaco editor as lightTheme. Created state management for theme changes and stored the selected theme in local storage. Added a dropdown to toggle between themes.",
         link: "https://github.com/metz-sh/simulacrum/pull/46"
     },
+    {
+        prTitle: "Fix/523 non disclosed salary filtering #528",
+        repoLink: "https://github.com/metz-sh/simulacrum",
+        prDescription: "This PR addresses a bug #523 in the job sorting functionality where sorting by maxSalary was not correctly pushing non-disclosed salary jobs to the end. The fix ensures that nulls: 'last' is applied only when sorting by maxSalary, while other fields (e.g., postedAt) use standard sorting logic without nulls. This resolves errors encountered when sorting by non-salary fields.",
+        link: "https://github.com/code100x/job-board/pull/528"
+    }
 ] as const;

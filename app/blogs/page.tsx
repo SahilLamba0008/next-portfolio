@@ -7,6 +7,7 @@ const page = () => {
             <span className="text-indigo-500 stroke-slate-100">
                 Blogs
             </span>
+            <p className="font-extralight text-sm">adding soon...</p>
           </h1>
       </div>
   )

@@ -19,7 +19,6 @@ const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null
 const ActiveSectionContextProvider = ({children}: ActiveSectionContextProviderProps) => {
   const pathName = usePathname();
   const currentActiveSection = pathName.substring(1) || "home";
-  console.log(currentActiveSection);
   
   const [activeSection, setActiveSection] = useState<SectionName>(currentActiveSection);
   return (
