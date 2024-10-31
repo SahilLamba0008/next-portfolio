@@ -13,6 +13,7 @@ const HeroSection = () => {
                           className="rounded-2xl object-cover ring-2 ring-indigo-700"
                           fill
                           alt="avatar_picture"
+                          priority
                       />
                   </div>
                   <Image
