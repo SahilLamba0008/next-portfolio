@@ -1,15 +1,17 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { Suspense } from 'react'
 import HireMeButton from './hireme-button';
+import Loading from '../app/loading';
 
 const HeroSection = () => {
   return (
       <div className='flex flex-row-reverse items-center gap-10'>
           <div className='flex flex-col items-center justify-between mb-10'>
-              <div className="relative group w-[200px] h-[200px] cursor-pointer">
+            <Suspense fallback={<p className='text-4xl text-white'>Loading Image.....</p>}>
+              <div className="relative group w-[200px] h-[200px] cursor-pointer"> {/* Image Container */}
                   <div className="absolute cursor-pointer w-full h-full rounded-full transition-opacity duration-300 group-hover:ring-0">
                       <Image
-                          src="/assets/profile.png"
+                          src="/assets/file.jpg"
                           className="rounded-2xl object-cover ring-2 ring-indigo-700"
                           fill
                           alt="avatar_picture"
@@ -23,6 +25,7 @@ const HeroSection = () => {
                       alt="profile_picture"
                   />
               </div>
+            </Suspense>
           </div>
           <div>
               <h1 className="font-bold text-4xl mb-2">

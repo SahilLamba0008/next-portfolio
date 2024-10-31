@@ -1,4 +1,3 @@
-"use client";
 // import ContributionsSection from "@/components/contributions-section";
 import ExperienceSection from "@/components/experience-section";
 import HeroSection from "@/components/hero-section";
@@ -22,9 +21,10 @@ export default function Home() {
     return (
         <div className="mt-[10rem] max-w-[1080px] mx-auto px-4">
             <HeroSection />
-            <ProjectsSection />
             <ExperienceSection />
+            <ProjectsSection />
             <SkillsSection />
+            <hr className="mt-20"/>
             {/* 
             // ---   Accordions for each Section ---
             <Accordion
