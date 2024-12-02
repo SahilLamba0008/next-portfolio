@@ -1,6 +1,6 @@
 import PullReqestComp from '@/components/pull-request-comp';
 import { contributions } from '@/lib/data';
-import { Contributions } from '@/types/types';
+import { Contribution } from '@/types/types';
 import React from 'react'
 
 const page = () => {
@@ -12,7 +12,7 @@ const page = () => {
             </span>
           </h1>
           <div className='flex flex-col gap-6'>
-            {contributions.map((pr: Contributions, index: number)=>{
+            {contributions.map((pr: Contribution, index: number)=>{
               return (
                 <PullReqestComp data={pr} key={index}/>
               )

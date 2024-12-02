@@ -1,5 +1,5 @@
 import { Icons } from "@/components/ui/icons";
-import { Contributions, Experience, NavLink, Project, Skill, SocialLink } from "@/types/types";
+import { Contribution, Experience, NavLink, Project, Publication, Skill, SocialLink } from "@/types/types";
 
 export const socialLinks: SocialLink[] = [
     {
@@ -361,7 +361,7 @@ export const experienceData: Experience[] = [
     },
 ] as const;
 
-export const contributions: Contributions[] = [
+export const contributions: Contribution[] = [
     {
         prTitle: "Add support for theme 36 #46",
         repoLink: "https://github.com/metz-sh/simulacrum",
@@ -370,8 +370,24 @@ export const contributions: Contributions[] = [
     },
     {
         prTitle: "Fix/523 non disclosed salary filtering #528",
-        repoLink: "https://github.com/metz-sh/simulacrum",
+        repoLink: "https://github.com/code100x/job-board/tree/main",
         prDescription: "This PR addresses a bug #523 in the job sorting functionality where sorting by maxSalary was not correctly pushing non-disclosed salary jobs to the end. The fix ensures that nulls: 'last' is applied only when sorting by maxSalary, while other fields (e.g., postedAt) use standard sorting logic without nulls. This resolves errors encountered when sorting by non-salary fields.",
         link: "https://github.com/code100x/job-board/pull/528"
+    },
+    {
+        prTitle: "feature: Autoplay the next video after completion of one and Add next and prev button in video-js comp #1308 #1434",
+        repoLink: "https://github.com/code100x/cms/tree/main",
+        prDescription: "This PR introduces several fixes and enhancements to the video player functionality. Firstly, it implements the autoplay feature, enabling the next video to play automatically once the current one finishes, providing a seamless viewing experience. Additionally, the codebase for the video player has been refactored, focusing on optimizing transitions between videos and improving overall readability and maintainability. New navigation features have also been added to the Video.js player, including Play Next Video and Play Previous Video buttons, allowing users to manually navigate between video content effortlessly. These updates collectively enhance user experience and streamline video playback functionality.",
+        link: "https://github.com/code100x/cms/pull/1434",
+        approved: true,
     }
 ] as const;
+
+export const publications: Publication[] = [
+    {
+        blogTitle: "Server-Side Rendering (SSR) vs Static Site Generation (SSG): Choosing the Right Approach in Next.js",
+        blogLink: "https://medium.com/@19bcs1922/server-side-rendering-ssr-vs-static-site-generation-ssg-choosing-the-right-approach-in-next-js-cf2ec5eb58e4",
+        blogCover: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*jZCYevnotN_5UKCsX0I1fw.jpeg",
+        blogDescription: "When building a web application with Next.js, one of the key decisions you’ll face is whether to use Server-Side Rendering (SSR) or Static Site Generation (SSG). Both approaches offer unique advantages and are tailored to different use cases. In this article, we’ll dive deep into these rendering strategies, their benefits, limitations, and practical use cases to help you choose the right approach for your project."
+    }
+]

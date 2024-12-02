@@ -1,3 +1,4 @@
+import BlogPreview from '@/components/BlogPreview'
 import React from 'react'
 
 const page = () => {
@@ -7,7 +8,9 @@ const page = () => {
             <span className="text-indigo-500 stroke-slate-100">
                 Blogs
             </span>
-            <p className="font-extralight text-sm">adding soon...</p>
+            <p className="font-extralight text-sm mt-20">
+              <BlogPreview />
+            </p>
           </h1>
       </div>
   )

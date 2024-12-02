@@ -47,9 +47,17 @@ export type Experience = {
     skills: string[];
 };
 
-export type Contributions = {
+export type Contribution = {
     prTitle: string;
     repoLink: string;
     link: string;
     prDescription: string;
+    approved?: boolean;
 };
+
+export type Publication = {
+    blogTitle: string;
+    blogLink: string;
+    blogCover: string;
+    blogDescription: string;
+}
