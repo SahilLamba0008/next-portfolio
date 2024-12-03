@@ -23,13 +23,13 @@ const BlogPreview = () => {
                 {blog.blogDescription}
               </p>
             </div>
-              <Image
-                src={blog.blogCover}
-                alt="blog cover"
-                height={300}
-                width={300}
-                className="rounded-md backdrop-blur-3xl"
-              />
+            <Image
+              src={blog.blogCover}
+              alt="blog cover"
+              height={300}
+              width={300}
+              className="rounded-md backdrop-blur-3xl"
+            />
           </div>
         );
       })}
