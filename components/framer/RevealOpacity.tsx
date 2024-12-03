@@ -3,9 +3,10 @@ import { motion, useInView, useAnimation } from "framer-motion";
 
 type RevealOpacityProps = {
   children: React.ReactNode;
-  width: number | string;
-  height: number | string;
+  width?: number | string;
+  height?: number | string;
   delay?: number;
+  className?: string;
 };
 
 const RevealOpacity = ({
@@ -13,6 +14,7 @@ const RevealOpacity = ({
   width,
   height,
   delay = 0.4,
+  className = ""
 }: RevealOpacityProps) => {
   const ref = useRef(null);
   const animationController = useAnimation();
@@ -31,6 +33,7 @@ const RevealOpacity = ({
         overflow: "hidden",
       }}
       ref={ref}
+      className = {className}
     >
       <motion.div
         variants={{

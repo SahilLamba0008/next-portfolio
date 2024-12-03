@@ -1,17 +1,19 @@
+"use client"
 import { publications } from "@/lib/data";
 import { Publication } from "@/types/types";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import RevealOpacity from "./framer/RevealOpacity";
 
 const BlogPreview = () => {
   return (
     <div>
       {publications.map((blog: Publication, idx: number) => {
         return (
+          <RevealOpacity delay={0.1} key={idx}>
           <div
             className="flex cursor-pointer gap-4 rounded-xl border border-slate-600/80 bg-gray-600/10 px-4 py-6 backdrop-blur-2xl"
-            key={idx}
           >
             <div>
               <Link href={blog.blogLink} target="_blank">
@@ -31,6 +33,7 @@ const BlogPreview = () => {
               className="rounded-md backdrop-blur-3xl"
             />
           </div>
+          </RevealOpacity>
         );
       })}
     </div>

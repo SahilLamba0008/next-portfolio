@@ -10,7 +10,7 @@ interface PullRequestData {
   approved?: boolean;
 }
 
-const PullReqestComp = ({ data }: { data: PullRequestData }) => {
+const PullRequestComp = ({ data }: { data: PullRequestData }) => {
   const { prTitle, prDescription, repoLink, link } = data;
   return (
     <div className="z-10 flex justify-between rounded-xl border border-slate-600/80 bg-gray-600/10 px-4 py-6 font-bold backdrop-blur-2xl">
@@ -40,4 +40,4 @@ const PullReqestComp = ({ data }: { data: PullRequestData }) => {
   );
 };
 
-export default PullReqestComp;
+export default PullRequestComp;
