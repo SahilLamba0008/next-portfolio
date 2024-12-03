@@ -33,7 +33,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning className="!scroll-smooth">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased dark mx-4 my-8 flex flex-col`}
+                className={`${geistSans.variable} ${geistMono.variable} dark mx-4 my-8 flex flex-col antialiased`}
             >
                 <ThemeProvider attribute="class" defaultTheme="dark">
                     <BgGlow />

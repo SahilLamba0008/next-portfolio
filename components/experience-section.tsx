@@ -34,7 +34,7 @@ export function formatDate(date: Date): string {
 const ExperienceSection = () => {
     return (
         <div className="mt-20">
-            <h1 className="text-4xl font-bold mb-8">Experience</h1>
+            <h1 className="mb-8 text-4xl font-bold">Experience</h1>
             <ol className="relative border-l border-gray-200 dark:border-gray-700">
                 {experienceData.map(
                     (
@@ -62,7 +62,7 @@ const ExperienceSection = () => {
                         return (
                             <li key={idx} className="mb-10 ml-6">
                                 <span
-                                    className={`absolute flex items-center justify-center w-6 h-6 bg-gray-200 rounded-full -left-3 ring-8 ring-white dark:bg-gray-700 ${idx == 0 ? "dark:ring-gray-900" : "dark:ring-gray-900"}`}
+                                    className={`absolute -left-3 flex size-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-white dark:bg-gray-700 ${idx == 0 ? "dark:ring-gray-900" : "dark:ring-gray-900"}`}
                                 >
                                     <Image
                                         src={companyLogo || "/default-logo.png"}
@@ -72,7 +72,7 @@ const ExperienceSection = () => {
                                         className="rounded-full"
                                     />
                                 </span>
-                                <div className="ml-2 px-4 py-8 rounded-lg bg-gray-600/10 backdrop-blur-2xl">
+                                <div className="ml-2 rounded-lg bg-gray-600/10 px-4 py-8 backdrop-blur-2xl">
                                     <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                                         {startDateFormatted} -{" "}
                                         {endDateFormatted}

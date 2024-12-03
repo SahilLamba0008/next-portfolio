@@ -20,8 +20,8 @@ const Navbar = () => {
     };
 
     return (
-        <div className="fixed top-8 -translate-x-1/2 left-1/2 border border-slate-600/80 rounded-xl bg-gray-600/10 backdrop-blur-2xl flex justify-between px-2 py-2 font-bold z-10">
-            <ul className="flex gap-4 items-center mr-20">
+        <div className="fixed left-1/2 top-8 z-10 flex -translate-x-1/2 justify-between rounded-xl border border-slate-600/80 bg-gray-600/10 p-2 font-bold backdrop-blur-2xl">
+            <ul className="mr-20 flex items-center gap-4">
                 {navLinks.map((link: NavLink) => {
                     return (
                         <Link href={link.link} key={link.id}>
@@ -38,7 +38,7 @@ const Navbar = () => {
                                 {link.name}
                                 {link.name === activeSection && (
                                     <motion.span
-                                        className="absolute inset-0 rounded-xl -z-10 bg-slate-700/25 h-full"
+                                        className="absolute inset-0 -z-10 h-full rounded-xl bg-slate-700/25"
                                         layoutId="activeSection"
                                         transition={{
                                             type: "spring",
@@ -52,7 +52,7 @@ const Navbar = () => {
                     );
                 })}
             </ul>
-            <ul className="flex gap-4 items-center">
+            <ul className="flex items-center gap-4">
                 {socialLinks.map((link: SocialLink, index: number) => {
                     return (
                         <li
@@ -80,7 +80,7 @@ const Navbar = () => {
                             />
                             {link.name === activeSection && (
                                 <motion.span
-                                    className="absolute inset-0 rounded-xl -z-10 bg-slate-700/25 h-full"
+                                    className="absolute inset-0 -z-10 h-full rounded-xl bg-slate-700/25"
                                     layoutId="activeSection"
                                     transition={{
                                         type: "spring",

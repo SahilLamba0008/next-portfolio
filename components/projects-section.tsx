@@ -7,14 +7,14 @@ import Link from "next/link";
 const ProjectsSection = () => {
     return (
         <div id="projects" className="mt-20">
-            <h1 className="text-4xl font-bold mb-8">Projects</h1>
+            <h1 className="mb-8 text-4xl font-bold">Projects</h1>
             <div className="flex flex-col gap-8">
                 {projects.map((project: Project) => {
                     return (
-                        <div key={project.id} className="border border-slate-600/80 rounded-xl bg-gray-600/10 backdrop-blur-2xl px-4 py-6">
+                        <div key={project.id} className="rounded-xl border border-slate-600/80 bg-gray-600/10 px-4 py-6 backdrop-blur-2xl">
                             <div className="flex items-center justify-between">
-                                <p className="text-2xl font-bold hover:underline hover:cursor-pointer">{project.name}</p>
-                                <div className="flex gap-4 mr-8">
+                                <p className="text-2xl font-bold hover:cursor-pointer hover:underline">{project.name}</p>
+                                <div className="mr-8 flex gap-4">
                                     <Link href={project.RepoLink} target="_blank">
                                         <Icons.github height={24} width={24} className="cursor-pointer"/>
                                     </Link>
@@ -23,13 +23,13 @@ const ProjectsSection = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <p className="text-gray-500 text-md mt-4">
+                            <p className="text-md mt-4 text-gray-500">
                                 {project.description}
                             </p>
-                            <div className="flex gap-2 max-w-[1200px] flex-wrap mt-4">
+                            <div className="mt-4 flex max-w-[1200px] flex-wrap gap-2">
                                 {project.skills.map(
                                     (skill: string, idx: number) => {
-                                        return <span key={idx} className="border border-slate-600/80 rounded-full px-4 whitespace-nowrap">{skill}</span>;
+                                        return <span key={idx} className="whitespace-nowrap rounded-full border border-slate-600/80 px-4">{skill}</span>;
                                     }
                                 )}
                             </div>

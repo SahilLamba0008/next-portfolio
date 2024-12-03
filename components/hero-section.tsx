@@ -5,10 +5,10 @@ import HireMeButton from './hireme-button';
 const HeroSection = () => {
   return (
       <div className='flex flex-row-reverse items-center gap-10'>
-          <div className='flex flex-col items-center justify-between mb-10'>
+          <div className='mb-10 flex flex-col items-center justify-between'>
             <Suspense fallback={<p className='text-4xl text-white'>Loading Image.....</p>}>
-              <div className="relative group w-[200px] h-[200px] cursor-pointer"> {/* Image Container */}
-                  <div className="absolute cursor-pointer w-full h-full rounded-full transition-opacity duration-300 group-hover:ring-0">
+              <div className="group relative size-[200px] cursor-pointer"> {/* Image Container */}
+                  <div className="absolute size-full cursor-pointer rounded-full transition-opacity duration-300 group-hover:ring-0">
                       <Image
                           src="/assets/file.jpg"
                           className="rounded-2xl object-cover ring-2 ring-indigo-700"
@@ -19,7 +19,7 @@ const HeroSection = () => {
                   </div>
                   <Image
                       src={"/toji 2.png"}
-                      className="absolute rounded-2xl transition-opacity duration-300  ring-2 ring-indigo-700 opacity-0 group-hover:opacity-100 object-cover"
+                      className="absolute rounded-2xl object-cover opacity-0  ring-2 ring-indigo-700 transition-opacity duration-300 group-hover:opacity-100"
                       fill
                       alt="profile_picture"
                   />
@@ -27,14 +27,14 @@ const HeroSection = () => {
             </Suspense>
           </div>
           <div>
-              <h1 className="font-bold text-4xl mb-2">
+              <h1 className="mb-2 text-4xl font-bold">
                   Hey, I&apos;m{" "}
-                  <span className="text-indigo-500 stroke-slate-100">
+                  <span className="stroke-slate-100 text-indigo-500">
                       Sahil
                   </span>{" "}
                   👋
               </h1>
-              <p className="text-gray-500 text-md mb-4">
+              <p className="text-md mb-4 text-gray-500">
                   A Passionate{" "}
                   <span className="font-bold">full stack developer</span> with
                   almost a year of work experience. I love contribute in open

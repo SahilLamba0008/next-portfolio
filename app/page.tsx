@@ -19,7 +19,7 @@ export default function Home() {
     //   };
 
     return (
-        <div className="mt-[10rem] max-w-[1080px] mx-auto px-4">
+        <div className="mx-auto mt-40 max-w-[1080px] px-4">
             <HeroSection />
             <ExperienceSection />
             <ProjectsSection />
@@ -96,7 +96,7 @@ export default function Home() {
             <Link
                 href="https://nextjs.org/"
                 target="__blank"
-                className="flex gap-2 cursor-pointer hover:font-medium my-[5rem] mx-auto w-fit"
+                className="mx-auto my-20 flex w-fit cursor-pointer gap-2 hover:font-medium"
             >
                 Made with Next.js
                 <svg

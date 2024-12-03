@@ -3,15 +3,15 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className="mt-[10rem] max-w-[1080px] mx-auto px-4">
-          <h1 className="font-bold text-4xl">Published{" "}
-            <span className="text-indigo-500 stroke-slate-100">
+    <div className="mx-auto mt-40 max-w-[1080px] px-4">
+          <h1 className="mx-auto w-fit text-4xl font-bold">Published{" "}
+            <span className="stroke-slate-100 text-indigo-500">
                 Blogs
             </span>
-            <p className="font-extralight text-sm mt-20">
-              <BlogPreview />
-            </p>
           </h1>
+          <div className="mt-20 text-sm font-extralight">
+            <BlogPreview />
+          </div>
       </div>
   )
 }

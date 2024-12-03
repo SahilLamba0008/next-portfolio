@@ -13,13 +13,13 @@ import React from "react";
 const SkillsSection = () => {
     return (
         <div className="mt-20">
-            <h1 className="text-4xl font-bold mb-8">Skills</h1>
-            <div className="flex gap-4 flex-wrap justify-center relative">
+            <h1 className="mb-8 text-4xl font-bold">Skills</h1>
+            <div className="relative flex flex-wrap justify-center gap-4">
                 {skills.map((skill: Skill) => {
                     return (
                         <div
                             key={skill.id}
-                            className="bg-black border border-slate-600/40 rounded-xl font-bold px-4 py-2 cursor-pointer"
+                            className="cursor-pointer rounded-xl border border-slate-600/40 bg-black px-4 py-2 font-bold"
                         >
                             {skill.name}
                             {/* <TooltipProvider delayDuration={0}>

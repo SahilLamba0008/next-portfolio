@@ -10,16 +10,16 @@ const BlogPreview = () => {
       {publications.map((blog: Publication, idx: number) => {
         return (
           <div
-            className="border border-slate-600/80 rounded-xl bg-gray-600/10 backdrop-blur-2xl px-4 py-6 flex gap-4 cursor-pointer"
+            className="flex cursor-pointer gap-4 rounded-xl border border-slate-600/80 bg-gray-600/10 px-4 py-6 backdrop-blur-2xl"
             key={idx}
           >
             <div>
               <Link href={blog.blogLink} target="_blank">
-                <h1 className="text-2xl font-bold cursor-pointer hover:underline transition-hover delay-150">
+                <h1 className="transition-hover cursor-pointer text-2xl font-bold delay-150 hover:underline">
                   {blog.blogTitle}
                 </h1>
               </Link>
-              <p className="font-extralight mt-4 text-gray-500 line-clamp-5">
+              <p className="mt-4 line-clamp-5 font-extralight text-gray-500">
                 {blog.blogDescription}
               </p>
             </div>

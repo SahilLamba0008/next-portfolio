@@ -14,7 +14,7 @@ const HireMeButton = () => {
                 href="mailto:sahillamba003@gmail.com?subject=Hiring Inquiry&body=Hello,%20I%20would%20like%20to%20discuss%20a%20job%20opportunity&cc=19bcs1922@gmail.com&bcc=someone@example.com"
                 // onClick={() => changeMailIcon()}
             >
-                <button className="h-10 flex items-center gap-4 whitespace-nowrap cursor-pointer p-4">
+                <button className="flex h-10 cursor-pointer items-center gap-4 whitespace-nowrap p-4">
                     Hire Me{" "} <Mail size={15} />
                     {/* {!mailButtonClicked ? (
                         <Mail size={15} />
