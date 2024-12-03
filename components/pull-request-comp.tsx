@@ -22,11 +22,13 @@ const PullRequestComp = ({ data }: { data: PullRequestData }) => {
         </div>
         <div className="flex-1">
           <div className="flex items-center justify-between gap-2">
-            <h1 className="transition-hover cursor-pointer text-2xl font-bold delay-150 hover:underline">
-              {prTitle}
-            </h1>
+            <Link href={link} target="_blank">
+              <h1 className="transition-hover cursor-pointer text-2xl font-bold delay-150 hover:underline">
+                {prTitle}
+              </h1>
+            </Link>
             <p className="mr-6 cursor-pointer text-sm font-thin">
-              <Link href={link} target="_blank">
+              <Link href={repoLink} target="_blank">
                 <Icons.github height={22} width={22} />
               </Link>
             </p>
