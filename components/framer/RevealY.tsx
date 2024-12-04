@@ -7,6 +7,7 @@ type RevealYProps = {
   height?: number | string;
   delay?: number;
   direction?: string;
+  className?: string;
 };
 const RevealY = ({
   children,
@@ -14,6 +15,7 @@ const RevealY = ({
   height,
   delay = 0.5,
   direction,
+  className
   // background,
   // delayOverlay,
 }: RevealYProps) => {
@@ -39,6 +41,7 @@ const RevealY = ({
         overflow: "hidden",
       }}
       ref={ref}
+      className={className}
     >
       <motion.div
         variants={{

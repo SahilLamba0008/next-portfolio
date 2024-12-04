@@ -10,7 +10,7 @@ const HeroSection = () => {
     <RevealOpacity delay={0.1}>
       <div className="flex flex-row-reverse items-center gap-10">
         <div className="mb-10 flex flex-col items-center justify-between">
-          <RevealY delay={0.1} direction="from-top">
+          <RevealY delay={0.1} direction="from-top" className="p-2">
             <div className="group relative size-[200px] cursor-pointer">
               {" "}
               {/* Image Container */}
