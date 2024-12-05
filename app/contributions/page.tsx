@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div className="mx-auto mt-40 max-w-[1080px] px-4">
       <RevealY delay={0.05}>
-        <h1 className="mx-auto mb-20 w-fit text-4xl font-bold">
+        <h1 className="mx-auto mb-20 w-fit text-4xl font-bold text-center">
           Github{" "}
           <span className="stroke-slate-100 text-indigo-500">
             Contributions

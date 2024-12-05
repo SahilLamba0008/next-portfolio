@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React from "react";
 import HireMeButton from "./hireme-button";
@@ -8,8 +8,11 @@ import RevealY from "./framer/RevealY";
 const HeroSection = () => {
   return (
     <RevealOpacity delay={0.1}>
-      <div className="flex flex-row-reverse items-center gap-10">
-        <div className="mb-10 flex flex-col items-center justify-between">
+      <div className="flex flex-row-reverse max-sm:flex-col-reverse items-center gap-10 max-sm:gap-2">
+        <div className="sm:hidden">
+          <HireMeButton />
+        </div>
+        <div className="max-sm:mb-6 sm:mb-10 flex flex-col items-center justify-between">
           <RevealY delay={0.1} direction="from-top" className="p-2">
             <div className="group relative size-[200px] cursor-pointer">
               {" "}
@@ -47,7 +50,9 @@ const HeroSection = () => {
             <span className="font-bold">with custom domain.</span>
             The idea behind this is to save time and increase productivity also.
           </p>
-          <HireMeButton />
+          <div className="max-sm:hidden">
+            <HireMeButton />
+          </div>
         </div>
       </div>
     </RevealOpacity>

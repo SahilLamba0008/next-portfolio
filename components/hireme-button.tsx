@@ -9,7 +9,7 @@ const HireMeButton = () => {
   //     setMailButtonClicked((prevState)=> !prevState);
   // }
   return (
-    <AnimatedBorder className="mr-10">
+    <AnimatedBorder className="sm:mr-10">
       <Link
         href="mailto:sahillamba003@gmail.com?subject=Hiring Inquiry&body=Hello,%20I%20would%20like%20to%20discuss%20a%20job%20opportunity&cc=19bcs1922@gmail.com&bcc=someone@example.com"
         // onClick={() => changeMailIcon()}
