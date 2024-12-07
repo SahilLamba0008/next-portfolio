@@ -27,7 +27,7 @@ const ProjectsSection = () => {
                         className="cursor-pointer"
                       />
                     </Link>
-                    <Link href={project.Link} target="_blank">
+                    <Link href={project.VideoLink || ''} target="_blank">
                       <Icons.link
                         height={24}
                         width={24}
