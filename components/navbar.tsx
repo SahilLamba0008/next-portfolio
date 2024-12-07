@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed left-1/2 top-8 z-10 flex -translate-x-1/2 justify-between rounded-xl border border-slate-600/80 bg-gray-600/10 p-2 font-bold backdrop-blur-2xl max-sm:text-sm">
-      <ul className="mr-20 max-sm:mr-2 flex items-center gap-4 max-sm:gap-2">
+      <ul className="mr-20 max-sm:mr-1 flex items-center gap-4 max-sm:gap-1">
         {navLinks.map((link: NavLink) => {
           return (
             <Link href={link.link} key={link.id}>
@@ -52,7 +52,7 @@ const Navbar = () => {
           );
         })}
       </ul>
-      <ul className="flex items-center gap-4 max-sm:gap-2">
+      <ul className="flex items-center gap-4 max-sm:gap-[2px]">
         {socialLinks.map((link: SocialLink, index: number) => {
           return (
             <li
