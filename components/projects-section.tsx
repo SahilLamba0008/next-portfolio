@@ -73,7 +73,7 @@ const ProjectsSection = () => {
             onClick={handleLoadMore}
             className="text-md cursor-pointer text-white underline backdrop-blur-2xl max-sm:text-sm"
           >
-            load more projects...
+            <Icons.ChevronDown />
           </button>
         </div>
       ) : (
@@ -82,7 +82,7 @@ const ProjectsSection = () => {
             onClick={handleCollapse}
             className="text-md cursor-pointer text-white underline backdrop-blur-2xl max-sm:text-sm"
           >
-            collapse list...
+            <Icons.ChevronUp />
           </button>
         </div>
       )}
