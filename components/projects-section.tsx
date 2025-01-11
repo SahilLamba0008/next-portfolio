@@ -1,17 +1,28 @@
-"use client"
+"use client";
+
 import { projects } from "@/lib/data";
 import { Project } from "@/types/types";
-import React from "react";
+import React, { useState } from "react";
 import { Icons } from "./ui/icons";
 import Link from "next/link";
 import RevealY from "./framer/RevealY";
 
 const ProjectsSection = () => {
+  const [visibleCount, setVisibleCount] = useState(4);
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 3);
+  };
+
+  const handleCollapse = () => {
+    setVisibleCount(4);
+  };
+
   return (
     <div id="projects" className="mt-20">
       <h1 className="mb-8 text-4xl font-bold">Projects</h1>
       <div className="flex flex-col gap-8">
-        {projects.map((project: Project) => {
+        {projects.slice(0, visibleCount).map((project: Project) => {
           return (
             <RevealY key={project.id} delay={0.1}>
               <div className="rounded-xl border border-slate-600/80 bg-gray-600/10 px-4 py-6 backdrop-blur-2xl">
@@ -27,7 +38,7 @@ const ProjectsSection = () => {
                         className="cursor-pointer"
                       />
                     </Link>
-                    <Link href={project.VideoLink || ''} target="_blank">
+                    <Link href={project.VideoLink || ""} target="_blank">
                       <Icons.link
                         height={24}
                         width={24}
@@ -56,6 +67,25 @@ const ProjectsSection = () => {
           );
         })}
       </div>
+      {visibleCount < projects.length ? (
+        <div className="mt-8 text-center">
+          <button
+            onClick={handleLoadMore}
+            className="text-md cursor-pointer text-white underline backdrop-blur-2xl max-sm:text-sm"
+          >
+            load more projects...
+          </button>
+        </div>
+      ) : (
+        <div className="mt-8 text-center">
+          <button
+            onClick={handleCollapse}
+            className="text-md cursor-pointer text-white underline backdrop-blur-2xl max-sm:text-sm"
+          >
+            collapse list...
+          </button>
+        </div>
+      )}
     </div>
   );
 };
