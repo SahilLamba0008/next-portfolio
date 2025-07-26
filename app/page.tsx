@@ -3,6 +3,7 @@ import ExperienceSection from "@/components/experience-section";
 import HeroSection from "@/components/hero-section";
 import ProjectsSection from "@/components/projects-section";
 import SkillsSection from "@/components/skills-section";
+import StripesSVG from "@/components/StripesSVG";
 // import {
 //     Accordion,
 //     AccordionContent,
@@ -12,19 +13,20 @@ import SkillsSection from "@/components/skills-section";
 import Link from "next/link";
 
 export default function Home() {
-  // const scrollToSection = (sectionId: string) => {
-  //     document
-  //         .getElementById(sectionId)
-  //         ?.scrollIntoView({ behavior: "smooth", block: "center" });
-  //   };
+	// const scrollToSection = (sectionId: string) => {
+	//     document
+	//         .getElementById(sectionId)
+	//         ?.scrollIntoView({ behavior: "smooth", block: "center" });
+	//   };
 
-  return (
-    <div className="mx-auto mt-40 max-w-[1080px] px-4">
-      <HeroSection />
-      <ExperienceSection />
-      <ProjectsSection />
-      <SkillsSection />
-      {/* 
+	return (
+		<div className="mx-auto mt-40 max-w-[1080px] px-4">
+			{/* <StripesSVG /> */}
+			<HeroSection />
+			<ExperienceSection />
+			<ProjectsSection />
+			<SkillsSection />
+			{/* 
             // ---   Accordions for each Section ---
             <Accordion
               type="multiple"
@@ -92,6 +94,6 @@ export default function Home() {
                   </AccordionContent>
               </AccordionItem>
           </Accordion> */}
-    </div>
-  );
+		</div>
+	);
 }
