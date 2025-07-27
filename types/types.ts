@@ -2,62 +2,63 @@ import { LucideIcon, LucideProps } from "lucide-react";
 import { JSXElementConstructor, ReactNode } from "react";
 
 export type SocialLink = {
-  name: string;
-  link: string;
-  icon?: any;
-  iconUrl?: any;
+	name: string;
+	link: string;
+	icon?: any;
+	iconUrl?: any;
 };
 
 export type NavLink = {
-  id: string;
-  name: string;
-  link: string;
+	id: string;
+	name: string;
+	link: string;
 };
 
 export type Skill = {
-  id: string;
-  name: string;
-  link?: string;
-  image?: string;
+	id: string;
+	name: string;
+	link?: string;
+	image?: string;
 };
 
 export type Project = {
-  id: string;
-  name: string;
-  description: string;
-  skills: string[];
-  image: string;
-  coverImage: string;
-  Link: string;
-  RepoLink: string;
-  LiveLink?: string;
-  VideoLink?: string;
-  keyPoints: string[];
-  skillsSvg: string[];
-  even: boolean;
+	id: string;
+	name: string;
+	description: string;
+	skills: string[];
+	image: string;
+	coverImage: string;
+	Link: string;
+	RepoLink: string;
+	LiveLink?: string;
+	VideoLink?: string;
+	keyPoints: string[];
+	skillsSvg: string[];
+	even: boolean;
+	featured?: boolean;
 };
 
 export type Experience = {
-  companyName: string;
-  companyLogo?: string;
-  positions: string[];
-  startDate: Date;
-  endDate: Date | string;
-  contributions: string[];
-  skills: string[];
+	companyName: string;
+	companyLogo?: string;
+	positions: string[];
+	startDate: Date;
+	endDate: Date | string;
+	contributions: string[];
+	skills: string[];
 };
 
 export type Contribution = {
-  prTitle: string;
-  repoLink: string;
-  link: string;
-  prDescription: string;
-  approved?: boolean;
+	prTitle: string;
+	repoLink: string;
+	link: string;
+	prDescription: string;
+	approved?: boolean;
 };
 
 export type Publication = {
-  blogTitle: string;
-  blogLink: string;
-  blogCover: string;
-  blogDescription: string;
+	blogTitle: string;
+	blogLink: string;
+	blogCover: string;
+	blogDescription: string;
 };

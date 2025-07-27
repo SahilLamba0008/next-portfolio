@@ -35,8 +35,15 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning className="!scroll-smooth">
+			<head>
+				<link
+					rel="icon"
+					href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4NTg3ZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1yYXRpby1pY29uIGx1Y2lkZS1yYXRpbyI+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjIwIiB4PSI2IiB5PSIyIiByeD0iMiIvPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIxMiIgeD0iMiIgeT0iNiIgcng9IjIiLz48L3N2Zz4="
+					sizes="any"
+				/>
+			</head>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} dark mx-4 my-8 flex flex-col antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} dark my-8 flex flex-col antialiased`}
 			>
 				<ThemeProvider attribute="class" defaultTheme="dark">
 					<BgGlow />
